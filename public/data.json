@@ -1,0 +1,57 @@
+{
+  "person": {
+    "name": "Guilherme Escobar",
+    "instagram": "https://instagram.com/_guidaf",
+    "linkedin": "https://linkedin.com/in/guilherme-escobar-",
+    "whatsapp": "https://wa.me/5511994959995"
+  },
+  "site": {
+    "url": "https://guilhermenointercambio.com",
+    "og_image": "/assets/og-image.jpg",
+    "default_lang": "pt"
+  },
+  "pix": {
+    "key": "guilherm2010@hotmail.com",
+    "type": "email",
+    "qr_image": "assets/qrcode-pix.png"
+  },
+  "fundraising": {
+    "goal_brl": 69000,
+    "raised_brl": 0,
+    "supporters_count": 0,
+    "weekly_goal_pt": "📅 Meta da semana: R$ 3.000 para visto e seguro saúde",
+    "weekly_goal_en": "📅 Week goal: $600 USD for visa and health insurance",
+    "last_update_iso": "2025-09-11"
+  },
+  "links": {
+    "vakinha": "https://www.vakinha.com.br/...",
+    "benfeitoria": "https://benfeitoria.com/13213",
+    "picpay": "https://picpay.me/13210"
+  },
+  "sheet": {
+    "url": "https://docs.google.com/spreadsheets/d/1234567890"
+  },
+  "exchange_rate": {
+    "brl_to_usd": 0.20
+  },
+  "supporters_recent": [
+    { "name": "Zé S.", "amount_brl": 100 },
+    { "name": "Zé Carlos", "amount_brl": 50 }
+  ],
+  "updates": [
+    {
+      "date": "2025-09-12",
+      "title_pt": "🎉 Vaquinha lançada!",
+      "body_pt": "Hoje oficializei o lançamento da campanha!",
+      "title_en": "🎉 Fundraising launched!",
+      "body_en": "Today I officially launched the campaign!"
+    },
+    {
+      "date": "2025-10-15",
+      "title_pt": "📋 Documentação em andamento",
+      "body_pt": "Organizando a papelada do visto.",
+      "title_en": "📋 Documentation in progress",
+      "body_en": "Organizing visa paperwork."
+    }
+  ]
+}

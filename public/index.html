@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Intercâmbio do Guilherme Escobar — Ajude a tornar real</title>
+  <meta name="description" content="Conheça minha história e contribua para meu intercâmbio na Technische Hochschule Ingolstadt. Cada apoio faz diferença.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://intercambio-guilherme.com/">
+  <meta property="og:title" content="Intercâmbio do Guilherme Escobar — Ajude a tornar real">
+  <meta property="og:description" content="Estudante de Engenharia busca apoio para intercâmbio na Alemanha. Conheça minha história e faça parte deste sonho!">
+  <meta property="og:image" content="/assets/og-image.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://intercambio-guilherme.com/">
+  <meta property="twitter:title" content="Intercâmbio do Guilherme Escobar — Ajude a tornar real">
+  <meta property="twitter:description" content="Estudante de Engenharia busca apoio para intercâmbio na Alemanha. Conheça minha história e faça parte deste sonho!">
+  <meta property="twitter:image" content="/assets/og-image.jpg">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Guilherme Escobar",
+    "description": "Estudante de Engenharia buscando apoio para intercâmbio na Alemanha",
+    "url": "https://intercambio-guilherme.com",
+    "sameAs": [
+      "https://instagram.com/guilherme.engenharia",
+      "https://linkedin.com/in/guilhermeescobar"
+    ]
+  }
+  </script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <!-- Language Toggle -->
+  <div class="language-toggle">
+    <button onclick="toggleLanguage('pt')" id="ptBtn" class="lang-btn active">🇧🇷 PT</button>
+    <button onclick="toggleLanguage('en')" id="enBtn" class="lang-btn">🇺🇸 EN</button>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <!-- PT -->
+        <div class="lang-content" data-lang="pt">
+          <h1>Meu sonho é estudar na Alemanha e você pode fazer parte!</h1>
+          <p>Fui aceito na Technische Hochschule Ingolstadt em Ingolstadt, Alemanha para um intercâmbio de 1 semestre. Criei este site para contar minha história e pedir seu apoio.</p>
+          <div class="hero-buttons">
+            <a href="#doacao" class="btn-primary">Apoiar meu intercâmbio</a>
+            <a href="#historia" class="btn-secondary">Conheça minha história</a>
+          </div>
+        </div>
+        <!-- EN -->
+        <div class="lang-content hidden" data-lang="en">
+          <h1>My dream is to study in Germany and you can be part of it!</h1>
+          <p>I was accepted at Technische Hochschule Ingolstadt in Germany for a 1 semester exchange. I created this page to share my story and ask for your support.</p>
+          <div class="hero-buttons">
+            <a href="#doacao" class="btn-primary">Support my exchange</a>
+            <a href="#historia" class="btn-secondary">Learn my story</a>
+          </div>
+        </div>
+        <div class="hero-image">👨‍🎓</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- História -->
+  <section class="section" id="historia">
+    <div class="container">
+      <!-- PT -->
+      <div class="lang-content" data-lang="pt">
+        <h2 class="section-title">Minha História</h2>
+        <p class="section-subtitle">Conheça minha jornada até aqui e por que este intercâmbio é tão importante</p>
+        <div class="story-grid">
+          <div class="card story-block">
+            <h3>🎓 Minha origem acadêmica</h3>
+            <p>Sou <strong>Guilherme Escobar</strong>, estudante de Engenharia no Insper. Desde o primeiro semestre, participei de projetos práticos e competições estudantis para ir além da teoria.</p>
+          </div>
+          <div class="card story-block">
+            <h3>🏎️ Experiência na FSAE</h3>
+            <p>Atuei em chassi e manufatura, trabalhando com materiais compostos, soldagem e processos industriais. Foi onde confirmei minha paixão por engenharia automotiva.</p>
+          </div>
+          <div class="card story-block">
+            <h3>💼 Experiência profissional</h3>
+            <p>Estágios no setor automotivo aplicando CAD, análise de materiais e otimização de processos. Aprendi o valor da inovação contínua.</p>
+          </div>
+          <div class="card story-block">
+            <h3>🌍 Por que a Alemanha?</h3>
+            <p>A Alemanha é berço da engenharia automotiva. A <em>Technische Hochschule Ingolstadt</em> fica no coração do setor, com acesso a tecnologias e métodos de ponta.</p>
+          </div>
+          <div class="card story-block">
+            <h3>🧩 De onde vem minha curiosidade</h3>
+            <p>Sempre fui fascinado por entender “como as coisas funcionam”. Isso me levou a buscar
+              projetos mão na massa e a transformar problemas em oportunidades de aprender.</p>
+          </div>
+          <div class="card story-block">
+            <h3>🔧 Projeto que me virou a chave</h3>
+            <p>Num projeto de chassi e manufatura, vi a teoria virar impacto real: planejamento,
+              teste, erro e melhoria contínua. Foi quando decidi seguir carreira na área automotiva.</p>
+          </div>
+          <div class="card story-block">
+            <h3>⏱️ Rotina de estudo & disciplina</h3>
+            <p>Organizo meus dias com blocos de estudo, revisão e prática. Priorizo conceitos
+              fundamentais e documentação — o que me ajuda a aprender mais rápido e com clareza.</p>
+          </div>
+          <div class="card story-block">
+            <h3>💻 Programação que acelera a engenharia</h3>
+            <p>Uso programação para simular, automatizar tarefas e analisar dados de projetos.
+              Gosto de aproximar software e oficina: código que resolve problemas de verdade.</p>
+          </div>
+          <div class="card story-block">
+            <h3>🌱 Por que mobilidade sustentável</h3>
+            <p>Acredito que engenharia tem papel-chave para um transporte mais limpo e acessível.
+              Quero aprender o que há de ponta na Alemanha e trazer soluções aplicáveis ao Brasil.</p>
+          </div>
+          <div class="card story-block">
+            <h3>🤝 Minha rede de apoio</h3>
+            <p>Professores, colegas de equipe e família me incentivam a dar o próximo passo.
+              Eles me lembram que ninguém constrói nada grande sozinho.</p>
+          </div>
+          <div class="card story-block">
+            <h3>📣 Como vou retribuir</h3>
+            <p>Durante o intercâmbio, vou compartilhar aprendizados em relatórios curtos,
+              posts técnicos e tutoriais. No retorno, planejo mentorar estudantes e apresentar
+              workshops sobre processos e ferramentas que aprendi.</p>
+          </div>
+          <div class="card story-block">
+            <h3>🔍 Transparência sempre</h3>
+            <p>Manterei a planilha pública de gastos e um mural de atualizações. Cada apoio
+              será reconhecido — e você vai saber exatamente o impacto que gerou.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- EN -->
+      <div class="lang-content hidden" data-lang="en">
+        <h2 class="section-title">My Story</h2>
+        <p class="section-subtitle">Learn about my journey and why this exchange matters</p>
+        <div class="story-grid">
+          <div class="card story-block">
+            <h3>🎓 Academic background</h3>
+            <p>I'm <strong>Guilherme Escobar</strong>, an Engineering student at Insper. Since the first semester I’ve pursued hands-on projects and competitions beyond theory.</p>
+          </div>
+          <div class="card story-block">
+            <h3>🏎️ FSAE experience</h3>
+            <p>Worked on chassis & manufacturing with composites, welding and industrial processes. That sealed my passion for automotive engineering.</p>
+          </div>
+          <div class="card story-block">
+            <h3>💼 Professional experience</h3>
+            <p>Internships in the automotive industry applying CAD, materials analysis and process optimization.</p>
+          </div>
+          <div class="card story-block">
+            <h3>🌍 Why Germany?</h3>
+            <p>Germany is the cradle of automotive engineering. THI sits at the heart of the industry with access to cutting-edge technology.</p>
+          </div>
+          <div class="card story-block">
+            <h3>🧩 Where my curiosity comes from</h3>
+            <p>I’ve always loved understanding how things work. That pushed me to hands-on projects
+              and to turning problems into learning opportunities.</p>
+          </div>
+          <div class="card story-block">
+            <h3>🔧 A turning-point project</h3>
+            <p>On a chassis/manufacturing project I saw theory become real impact: planning,
+              testing, failure and iteration. That’s when I chose the automotive path.</p>
+          </div>
+          <div class="card story-block">
+            <h3>⏱️ Study routine & discipline</h3>
+            <p>I structure my days with focused study blocks, review and practice. Clear notes
+              and fundamentals first help me learn faster and better.</p>
+          </div>
+          <div class="card story-block">
+            <h3>💻 Coding that powers engineering</h3>
+            <p>I use programming to simulate, automate and analyze project data. I like bringing
+              software to the shop floor: code that solves real problems.</p>
+          </div>
+          <div class="card story-block">
+            <h3>🌱 Why sustainable mobility</h3>
+            <p>Engineering must lead cleaner, more accessible transportation. I want to learn
+              cutting-edge techniques in Germany and bring applicable solutions to Brazil.</p>
+          </div>
+          <div class="card story-block">
+            <h3>🤝 My support network</h3>
+            <p>Professors, teammates and family encourage me to take the next step.
+              No one builds anything meaningful alone.</p>
+          </div>
+          <div class="card story-block">
+            <h3>📣 How I’ll give back</h3>
+            <p>I’ll share learnings through short reports, technical posts and tutorials.
+              When I’m back, I plan to mentor students and run workshops.</p>
+          </div>
+          <div class="card story-block">
+            <h3>🔍 Transparency, always</h3>
+            <p>I’ll keep a public expense sheet and an updates wall. Every supporter will be
+              recognized and will see the impact they made.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- BLOCO DE NÚMEROS RÁPIDOS (PT) -->
+      <div class="story-stats">
+        <div class="stat"><strong>3+</strong><span>anos em projetos práticos</span></div>
+        <div class="stat"><strong>6</strong><span>projetos acadêmicos entregues</span></div>
+        <div class="stat"><strong>2</strong><span>estágios no setor automotivo</span></div>
+        <div class="stat"><strong>∞</strong><span>vontade de aprender 😄</span></div>
+      </div>
+
+      <!-- QUICK STATS (EN) -->
+      <div class="story-stats">
+        <div class="stat"><strong>3+</strong><span>years of hands-on projects</span></div>
+        <div class="stat"><strong>6</strong><span>academic projects shipped</span></div>
+        <div class="stat"><strong>2</strong><span>internships in automotive</span></div>
+        <div class="stat"><strong>∞</strong><span>curiosity to learn 😄</span></div>
+      </div>
+
+      <div class="story-images">
+        <div class="story-image" data-caption="Equipe FSAE - Desenvolvendo carros de corrida">🏎️</div>
+        <div class="story-image" data-caption="Laboratório de Engenharia - Projetos práticos">🔬</div>
+        <div class="story-image" data-caption="Apresentação de projeto - Compartilhando conhecimento">📊</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Intercâmbio -->
+  <section class="section" style="background: var(--card-white);">
+    <div class="container">
+      <!-- PT -->
+      <div class="lang-content" data-lang="pt">
+        <h2 class="section-title">O Intercâmbio</h2>
+        <p class="section-subtitle">Detalhes sobre esta oportunidade única de estudar na Alemanha</p>
+      </div>
+      <!-- EN -->
+      <div class="lang-content hidden" data-lang="en">
+        <h2 class="section-title">The Exchange Program</h2>
+        <p class="section-subtitle">Details about this unique opportunity to study in Germany</p>
+      </div>
+
+      <!-- Cards iguais para PT/EN (texto muda via dois blocos) -->
+      <div class="lang-content" data-lang="pt">
+        <div class="exchange-grid">
+          <div class="card exchange-card"><div class="exchange-icon">🌍</div><h3>Destino</h3><p>Ingolstadt, Alemanha</p></div>
+          <div class="card exchange-card"><div class="exchange-icon">🏫</div><h3>Universidade</h3><p>Technische Hochschule Ingolstadt</p></div>
+          <div class="card exchange-card"><div class="exchange-icon">📅</div><h3>Duração</h3><p>Ago/2025 – Jan/2026</p></div>
+          <div class="card exchange-card"><div class="exchange-icon">🎯</div><h3>Foco</h3><p>Automotiva, Robótica, Mobilidade sustentável</p></div>
+          <div class="card exchange-card"><div class="exchange-icon">🏭</div><h3>Parcerias</h3><p>Acesso ao ecossistema automotivo</p></div>
+          <div class="card exchange-card"><div class="exchange-icon">🔬</div><h3>Laboratórios</h3><p>Indústria 4.0, Manufatura aditiva</p></div>
+        </div>
+        <div class="card" style="margin-top: 40px;">
+          <h3 style="color: var(--primary-blue); margin-bottom: 20px; text-align: center;">Objetivos de Aprendizagem</h3>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;">
+            <div>• Manufatura & Indústria 4.0</div>
+            <div>• CAD & simulação</div>
+            <div>• Sistemas de mobilidade</div>
+            <div>• Tecnologias de VEs</div>
+            <div>• Gestão de projetos</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lang-content hidden" data-lang="en">
+        <div class="exchange-grid">
+          <div class="card exchange-card"><div class="exchange-icon">🌍</div><h3>Destination</h3><p>Ingolstadt, Germany</p></div>
+          <div class="card exchange-card"><div class="exchange-icon">🏫</div><h3>University</h3><p>Technische Hochschule Ingolstadt</p></div>
+          <div class="card exchange-card"><div class="exchange-icon">📅</div><h3>Duration</h3><p>Aug/2025 – Jan/2026</p></div>
+          <div class="card exchange-card"><div class="exchange-icon">🎯</div><h3>Focus</h3><p>Automotive, Robotics, Sustainable mobility</p></div>
+          <div class="card exchange-card"><div class="exchange-icon">🏭</div><h3>Partnerships</h3><p>Access to the automotive ecosystem</p></div>
+          <div class="card exchange-card"><div class="exchange-icon">🔬</div><h3>Labs</h3><p>Industry 4.0, Additive manufacturing</p></div>
+        </div>
+        <div class="card" style="margin-top: 40px;">
+          <h3 style="color: var(--primary-blue); margin-bottom: 20px; text-align: center;">Learning Objectives</h3>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;">
+            <div>• Manufacturing & Industry 4.0</div>
+            <div>• CAD & simulation</div>
+            <div>• Smart mobility systems</div>
+            <div>• EV technologies</div>
+            <div>• Project management</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Por que preciso da sua ajuda -->
+  <section class="section" id="ajuda">
+    <div class="container">
+      <!-- PT -->
+      <div class="lang-content" data-lang="pt">
+        <h2 class="section-title">Por que preciso da sua ajuda</h2>
+        <p class="section-subtitle">Transparência total sobre os custos e como cada contribuição faz diferença</p>
+        <div class="progress-container">
+          <h3 style="text-align:center;color:var(--primary-blue);margin-bottom:8px;">Meta de Arrecadação</h3>
+          <p style="text-align:center;color:var(--text-gray);margin-bottom:20px;font-size:.95rem;">Câmbio e custo de vida na Alemanha</p>
+          <div class="transparency-badge" style="display:flex;justify-content:center;">
+            <span>🔍</span><span>Transparência total</span>
+          </div>
+          <div class="progress-bar"><div class="progress-fill"></div></div>
+          <div class="progress-text">
+            <span id="raised-amount">Arrecadado: —</span>
+            <span id="goal-amount">Meta: —</span>
+          </div>
+          <div class="supporters-counter"><span id="supportersCountPt">👥 +0 apoiadores</span></div>
+          <div class="weekly-goal" id="weeklyGoalPt">📅 Meta da semana</div>
+          <p style="text-align:center;margin-top:20px;color:var(--text-gray);">Mensalidade já coberta; recursos para custo de vida e deslocamento.</p>
+          <div style="text-align:center;margin-top:16px;">
+            <a id="sheetUrlPt" href="#" target="_blank" style="color:var(--primary-blue);text-decoration:underline;font-size:.9rem;">📊 Ver planilha pública de gastos</a><br>
+            <small style="color:var(--text-gray);margin-top:8px;display:block;">Última atualização: <span id="lastUpdatePt">—</span></small>
+          </div>
+        </div>
+      </div>
+
+      <!-- EN -->
+      <div class="lang-content hidden" data-lang="en">
+        <h2 class="section-title">Why I need your help</h2>
+        <p class="section-subtitle">Full transparency about costs and impact of each contribution</p>
+        <div class="progress-container">
+          <h3 style="text-align:center;color:var(--primary-blue);margin-bottom:8px;">Fundraising Goal</h3>
+          <p style="text-align:center;color:var(--text-gray);margin-bottom:20px;font-size:.95rem;">Exchange rate & living costs in Germany</p>
+          <div class="transparency-badge" style="display:flex;justify-content:center;">
+            <span>🔍</span><span>Full transparency</span>
+          </div>
+          <div class="progress-bar"><div class="progress-fill"></div></div>
+          <div class="progress-text">
+            <span id="raised-amount-en">Raised: —</span>
+            <span id="goal-amount-en">Goal: —</span>
+          </div>
+          <div class="supporters-counter"><span id="supportersCountEn">👥 +0 supporters</span></div>
+          <div class="weekly-goal" id="weeklyGoalEn">📅 Week goal</div>
+          <p style="text-align:center;margin-top:20px;color:var(--text-gray);">Tuition is covered; funds go to living & travel.</p>
+          <div style="text-align:center;margin-top:16px;">
+            <a id="sheetUrlEn" href="#" target="_blank" style="color:var(--primary-blue);text-decoration:underline;font-size:.9rem;">📊 View public expense spreadsheet</a><br>
+            <small style="color:var(--text-gray);margin-top:8px;display:block;">Last update: <span id="lastUpdateEn">—</span></small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Apoiadores recentes (PT/EN) -->
+      <div class="lang-content" data-lang="pt">
+        <div class="recent-supporters">
+          <h4 style="color:var(--primary-blue);margin-bottom:16px;text-align:center;">🙏 Apoiadores Recentes</h4>
+          <div id="supportersListPt"></div>
+        </div>
+      </div>
+      <div class="lang-content hidden" data-lang="en">
+        <div class="recent-supporters">
+          <h4 style="color:var(--primary-blue);margin-bottom:16px;text-align:center;">🙏 Recent Supporters</h4>
+          <div id="supportersListEn"></div>
+        </div>
+      </div>
+
+      <!-- Custos (fixo, se quiser pode manter estático) -->
+      <div class="lang-content" data-lang="pt">
+        <div class="card">
+          <h3 style="color:var(--primary-blue);margin-bottom:20px;text-align:center;">Estimativa de Custos (6 meses)</h3>
+          <div class="costs-table">
+            <div class="cost-item"><span>Passagens (ida e volta)</span><span><strong>R$ 10.000</strong></span></div>
+            <div class="cost-item"><span>Moradia estudantil</span><span><strong>R$ 25.200</strong></span></div>
+            <div class="cost-item"><span>Alimentação</span><span><strong>R$ 10.800</strong></span></div>
+            <div class="cost-item"><span>Transporte local</span><span><strong>R$ 6.000</strong></span></div>
+            <div class="cost-item"><span>Seguro saúde</span><span><strong>R$ 3.000</strong></span></div>
+            <div class="cost-item"><span>Visto/taxas/caução</span><span><strong>R$ 8.000</strong></span></div>
+            <div class="cost-item"><span>Emergências</span><span><strong>R$ 6.000</strong></span></div>
+          </div>
+          <div style="border-top:2px solid var(--accent-yellow);margin-top:20px;padding-top:20px;text-align:center;">
+            <strong style="font-size:1.2rem;color:var(--primary-blue);">Total: R$ 69.000</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Doação -->
+  <section class="section" id="doacao" style="background: var(--card-white);">
+    <div class="container">
+      <!-- PT -->
+      <div class="lang-content" data-lang="pt">
+        <h2 class="section-title">Como você pode ajudar</h2>
+        <p class="section-subtitle">Toda contribuição é recebida com gratidão. Vou atualizar minha jornada por aqui e no Instagram.</p>
+      </div>
+      <!-- EN -->
+      <div class="lang-content hidden" data-lang="en">
+        <h2 class="section-title">How you can help</h2>
+        <p class="section-subtitle">Every contribution is welcome. I’ll post updates here and on Instagram.</p>
+      </div>
+
+      <div class="donation-methods">
+        <div class="card pix-card">
+          <h3 style="color:white;margin-bottom:20px;">💳 PIX - Mais rápido e fácil</h3>
+          <div class="qr-code">
+            <img id="qrImage" alt="QR Code do PIX" />
+          </div>
+          <p style="color:white;margin-bottom:16px;font-size:.9rem;">Escaneie o QR Code ou copie a chave:</p>
+          <div class="pix-key" id="pixKey">—</div>
+          <button class="copy-btn">Copiar chave PIX</button>
+          <p style="margin-top:16px;font-size:.9rem;opacity:.8;">Chave PIX</p>
+        </div>
+
+        <div class="card">
+          <h3 style="color:var(--primary-blue);margin-bottom:20px;text-align:center;">🌐 Outras plataformas</h3>
+          <div style="display:flex;flex-direction:column;gap:16px;">
+            <a id="linkVakinha" href="#" target="_blank" class="btn-primary" style="text-align:center;text-decoration:none;">Vakinha Online</a>
+            <a id="linkBenfeitoria" href="#" target="_blank" class="btn-secondary" style="text-align:center;text-decoration:none;">Benfeitoria</a>
+            <a id="linkPicpay" href="#" target="_blank" class="btn-secondary" style="text-align:center;text-decoration:none;">PicPay</a>
+          </div>
+          <p style="text-align:center;margin-top:20px;color:var(--text-gray);font-size:.9rem;">Links serão atualizados em breve</p>
+        </div>
+      </div>
+
+      <!-- (Níveis de apoio mantidos como estavam; opcional) -->
+      <!-- ... você pode manter seus cards de níveis aqui ... -->
+
+      <div style="text-align:center;margin-top:40px;">
+        <h4 style="color:var(--primary-blue);margin-bottom:20px;">Compartilhe e ajude a divulgar!</h4>
+        <div class="share-buttons">
+          <button class="share-btn whatsapp"><span>📱</span><span>WhatsApp</span></button>
+          <button class="share-btn instagram"><span>📷</span><span>Instagram</span></button>
+          <button class="share-btn linkedin"><span>💼</span><span>LinkedIn</span></button>
+          <button class="share-btn"><span>🔗</span><span>Compartilhar</span></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Linha do tempo -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="lang-content" data-lang="pt">
+        <h2 class="section-title">Minha Jornada</h2>
+        <p class="section-subtitle">Os marcos importantes que me trouxeram até aqui</p>
+        <div class="timeline">
+          <div class="timeline-item"><div class="timeline-year">2021.1</div><div class="timeline-content"><h3>Início no Insper</h3><p>Começo do curso de Engenharia e paixão por automotiva.</p></div></div>
+          <div class="timeline-item"><div class="timeline-year">2022.2</div><div class="timeline-content"><h3>Equipe FSAE</h3><p>Desenvolvimento de carros de corrida e manufatura.</p></div></div>
+          <div class="timeline-item"><div class="timeline-year">2025.2</div><div class="timeline-content"><h3>Aprovação no Intercâmbio</h3><p>Selecionado para a THI em Ingolstadt.</p></div></div>
+          <div class="timeline-item"><div class="timeline-year">2026.1</div><div class="timeline-content"><h3>Intercâmbio na Alemanha</h3><p>Hora de viver a experiência.</p></div></div>
+        </div>
+      </div>
+      <div class="lang-content hidden" data-lang="en">
+        <h2 class="section-title">My Journey</h2>
+        <p class="section-subtitle">The milestones that brought me here</p>
+        <div class="timeline">
+          <div class="timeline-item"><div class="timeline-year">2021.1</div><div class="timeline-content"><h3>Started at Insper</h3><p>Engineering studies and love for automotive.</p></div></div>
+          <div class="timeline-item"><div class="timeline-year">2022.2</div><div class="timeline-content"><h3>FSAE Team</h3><p>Building race cars and manufacturing.</p></div></div>
+          <div class="timeline-item"><div class="timeline-year">2025.2</div><div class="timeline-content"><h3>Exchange Approval</h3><p>Selected for THI in Ingolstadt.</p></div></div>
+          <div class="timeline-item"><div class="timeline-year">2026.1</div><div class="timeline-content"><h3>Exchange in Germany</h3><p>Time to live the experience.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galeria (mantida) -->
+  <section class="section" style="background: linear-gradient(135deg,#f8f9fa 0%,#e9ecef 50%,#f8f9fa 100%); position: relative; overflow: hidden;">
+    <div class="container" style="position: relative; z-index: 1;">
+      <div class="lang-content" data-lang="pt">
+        <h2 class="section-title">Galeria</h2>
+        <p class="section-subtitle">Momentos importantes da minha jornada acadêmica</p>
+        <div class="gallery">
+          <div class="gallery-item" data-caption="Projeto FSAE - Desenvolvimento do chassi">🏎️</div>
+          <div class="gallery-item" data-caption="Laboratório de Manufatura - Aprendendo na prática">⚙️</div>
+          <div class="gallery-item" data-caption="Apresentação de TCC - Compartilhando conhecimento">📈</div>
+          <div class="gallery-item" data-caption="Equipe de projetos - Trabalho colaborativo">👥</div>
+          <div class="gallery-item" data-caption="Feira de Engenharia - Mostrando inovações">🔬</div>
+          <div class="gallery-item" data-caption="Estágio em empresa - Experiência profissional">🏢</div>
+        </div>
+      </div>
+      <div class="lang-content hidden" data-lang="en">
+        <h2 class="section-title">Gallery</h2>
+        <p class="section-subtitle">Highlights from my academic journey</p>
+        <div class="gallery">
+          <div class="gallery-item" data-caption="FSAE Project - Chassis development">🏎️</div>
+          <div class="gallery-item" data-caption="Manufacturing Lab - Hands-on learning">⚙️</div>
+          <div class="gallery-item" data-caption="Thesis Presentation - Sharing knowledge">📈</div>
+          <div class="gallery-item" data-caption="Project Team - Collaborative work">👥</div>
+          <div class="gallery-item" data-caption="Engineering Fair - Showcasing innovations">🔬</div>
+          <div class="gallery-item" data-caption="Company Internship - Professional experience">🏢</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Depoimentos (ajustado p/ Guilherme) -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="lang-content" data-lang="pt">
+        <h2 class="section-title">O que dizem sobre mim</h2>
+        <p class="section-subtitle">Palavras de quem acompanha minha jornada</p>
+        <div class="testimonials">
+          <div class="card testimonial"><p>Guilherme demonstra dedicação excepcional e paixão pela engenharia. O intercâmbio será decisivo para seu crescimento.</p><div class="testimonial-author">Prof.ª Maria Silva<br>Orientadora</div></div>
+          <div class="card testimonial"><p>Excelente trabalho em equipe e resolução de problemas complexos. Está pronto para desafios internacionais.</p><div class="testimonial-author">Eng. Carlos Santos<br>Supervisor</div></div>
+          <div class="card testimonial"><p>Focado e determinado. Vai aproveitar ao máximo a experiência na Alemanha.</p><div class="testimonial-author">Ana Costa<br>Colega FSAE</div></div>
+        </div>
+      </div>
+      <div class="lang-content hidden" data-lang="en">
+        <h2 class="section-title">What they say about me</h2>
+        <p class="section-subtitle">Words from those who follow my journey</p>
+        <div class="testimonials">
+          <div class="card testimonial"><p>Guilherme shows exceptional dedication and passion for engineering. The exchange will be a game changer.</p><div class="testimonial-author">Prof. Maria Silva<br>Advisor</div></div>
+          <div class="card testimonial"><p>Great teamwork and complex problem-solving. Ready for international challenges.</p><div class="testimonial-author">Eng. Carlos Santos<br>Supervisor</div></div>
+          <div class="card testimonial"><p>Focused and determined. He’ll make the most of the experience in Germany.</p><div class="testimonial-author">Ana Costa<br>FSAE teammate</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" style="background: var(--card-white);">
+    <div class="container">
+      <div class="lang-content" data-lang="pt">
+        <h2 class="section-title">Perguntas Frequentes</h2>
+        <p class="section-subtitle">Esclarecendo as principais dúvidas sobre o intercâmbio</p>
+        <div style="max-width:800px;margin:0 auto;">
+          <div class="faq-item"><button class="faq-question" onclick="toggleFaq(0)" aria-expanded="false" aria-controls="faq-0">Por que escolhi a Alemanha e a THI?</button><div class="faq-answer" id="faq-0"><p>A Alemanha é líder em engenharia automotiva; a THI tem forte conexão com a indústria.</p></div></div>
+          <div class="faq-item"><button class="faq-question" onclick="toggleFaq(1)" aria-expanded="false" aria-controls="faq-1">Em que exatamente o dinheiro será utilizado?</button><div class="faq-answer" id="faq-1"><p>100% para custo de vida: passagens, moradia, alimentação, transporte e seguro saúde.</p></div></div>
+          <div class="faq-item"><button class="faq-question" onclick="toggleFaq(2)" aria-expanded="false" aria-controls="faq-2">Como acompanhar a jornada?</button><div class="faq-answer" id="faq-2"><p>Atualizações semanais aqui e no Instagram <strong>@guilherme.engenharia</strong>.</p></div></div>
+          <div class="faq-item"><button class="faq-question" onclick="toggleFaq(3)" aria-expanded="false" aria-controls="faq-3">É seguro doar?</button><div class="faq-answer" id="faq-3"><p>Sim, via PIX ou plataformas confiáveis (Vakinha/Benfeitoria/PicPay).</p></div></div>
+          <div class="faq-item"><button class="faq-question" onclick="toggleFaq(4)" aria-expanded="false" aria-controls="faq-4">Outras formas de apoiar?</button><div class="faq-answer" id="faq-4"><p>Compartilhar o site, networking e oportunidades também ajudam muito!</p></div></div>
+        </div>
+      </div>
+
+      <div class="lang-content hidden" data-lang="en">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">Key questions answered</p>
+        <div style="max-width:800px;margin:0 auto;">
+          <div class="faq-item"><button class="faq-question" onclick="toggleFaq(5)" aria-expanded="false" aria-controls="faq-5">Why Germany and THI?</button><div class="faq-answer" id="faq-5"><p>Germany leads automotive engineering; THI is tightly connected to industry.</p></div></div>
+          <div class="faq-item"><button class="faq-question" onclick="toggleFaq(6)" aria-expanded="false" aria-controls="faq-6">What will funds be used for?</button><div class="faq-answer" id="faq-6"><p>100% for living costs: flights, housing, food, transport and health insurance.</p></div></div>
+          <div class="faq-item"><button class="faq-question" onclick="toggleFaq(7)" aria-expanded="false" aria-controls="faq-7">How to follow the journey?</button><div class="faq-answer" id="faq-7"><p>Weekly updates here and on Instagram <strong>@guilherme.engenharia</strong>.</p></div></div>
+          <div class="faq-item"><button class="faq-question" onclick="toggleFaq(8)" aria-expanded="false" aria-controls="faq-8">Is it safe to donate?</button><div class="faq-answer" id="faq-8"><p>Yes, via PIX or well-known platforms.</p></div></div>
+          <div class="faq-item"><button class="faq-question" onclick="toggleFaq(9)" aria-expanded="false" aria-controls="faq-9">Other ways to support?</button><div class="faq-answer" id="faq-9"><p>Share the site, make intros and open doors — it helps a lot!</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Atualizações (estático por enquanto) -->
+  <section class="section">
+    <div class="container">
+      <div class="lang-content" data-lang="pt">
+        <h2 class="section-title">Atualizações da Jornada</h2>
+        <p class="section-subtitle">Acompanhe os últimos desenvolvimentos</p>
+        <div class="updates-grid">
+          <div class="card update-card"><div class="update-date">11/09/2025</div><h3 class="update-title">🎉 Vaquinha lançada!</h3><p>Campanha no ar, obrigado pelo apoio!</p></div>
+          <!-- <div class="card update-card"><div class="update-date">10/01/2025</div><h3 class="update-title">📋 Documentação em andamento</h3><p>Organizando visto e seguro.</p></div> -->
+        </div>
+      </div>
+      <div class="lang-content hidden" data-lang="en">
+        <h2 class="section-title">Journey Updates</h2>
+        <p class="section-subtitle">Follow the latest</p>
+        <div class="updates-grid">
+          <div class="card update-card"><div class="update-date">Sep 11, 2025</div><h3 class="update-title">🎉 Fundraising launched!</h3><p>Campaign live, thank you!</p></div>
+          <!-- <div class="card update-card"><div class="update-date">Jan 10, 2025</div><h3 class="update-title">📋 Docs in progress</h3><p>Visa and insurance underway.</p></div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section class="section" id="contato" style="background: var(--card-white);">
+    <div class="container">
+      <div class="lang-content" data-lang="pt">
+        <h2 class="section-title">Vamos conversar!</h2>
+        <p class="section-subtitle">Entre em contato comigo</p>
+        <div class="contact-buttons">
+          <a id="linkInstagram" href="#" target="_blank" class="social-btn"><span>📷</span><span>Instagram</span></a>
+          <a id="linkLinkedIn" href="#" target="_blank" class="social-btn"><span>💼</span><span>LinkedIn</span></a>
+          <a id="linkWhatsApp" href="#" target="_blank" class="social-btn"><span>📱</span><span>WhatsApp</span></a>
+        </div>
+      </div>
+      <div class="lang-content hidden" data-lang="en">
+        <h2 class="section-title">Let's talk!</h2>
+        <p class="section-subtitle">Reach me on social</p>
+        <div class="contact-buttons">
+          <a id="linkInstagram" href="#" target="_blank" class="social-btn"><span>📷</span><span>Instagram</span></a>
+          <a id="linkLinkedIn" href="#" target="_blank" class="social-btn"><span>💼</span><span>LinkedIn</span></a>
+          <a id="linkWhatsApp" href="#" target="_blank" class="social-btn"><span>📱</span><span>WhatsApp</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fixed CTA -->
+  <div class="fixed-cta" id="fixedCta">
+    <div class="fixed-cta-content">
+      <a href="#doacao" class="btn-primary">Apoiar meu intercâmbio</a>
+      <button class="copy-pix-btn" id="copyPixFooter">Copiar PIX</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="lang-content" data-lang="pt">
+        <h2>Obrigado por fazer parte do meu sonho! 🙏</h2>
+        <p>Cada apoio e compartilhamento faz diferença. Vamos trazer esse aprendizado para o Brasil.</p>
+        <p style="margin-top:30px;opacity:.8;">© 2025 Guilherme Escobar — Intercâmbio na Alemanha</p>
+      </div>
+      <div class="lang-content hidden" data-lang="en">
+        <h2>Thank you for being part of my dream! 🙏</h2>
+        <p>Your support means the world. I’ll bring this knowledge back to Brazil.</p>
+        <p style="margin-top:30px;opacity:.8;">© 2025 Guilherme Escobar — Exchange in Germany</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
