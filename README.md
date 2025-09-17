@@ -1,4 +1,4 @@
-# exchangegermanypage
+# exchangeirelandpage
 
   <!-- "supporters_recent": [
     { "name": "Zé S.", "amount_brl": 100 },
