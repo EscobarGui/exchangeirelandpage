@@ -11,6 +11,29 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  const navLinks = document.getElementById('navLinks');
+  if (navLinks){
+    navLinks.addEventListener('click', (event) => {
+      if (!navLinks.classList.contains('active')) return;
+      const link = event.target.closest('a');
+      if (link){
+        closeMenu();
+        return;
+      }
+      closeMenu();
+    });
+  }
+
+  // exato momento no clique botão de hamburguer-menu esconde a barra fixa
+  const hamburgerMenu = document.querySelector('.hamburger-menu');
+  if (hamburgerMenu){
+    hamburgerMenu.addEventListener('click', (event) => {
+      const fixedBar = document.getElementById('fixedBar');
+      if (fixedBar) fixedBar.classList.remove('visible');
+    });
+  }
+
+
   // fixed bar on scroll
   window.addEventListener('scroll', () => {
     const fixedBar = document.getElementById('fixedBar');
@@ -24,6 +47,11 @@ document.addEventListener('DOMContentLoaded', () => {
         fixedBar.classList.remove('visible');
       }
       const isMobile = window.matchMedia('(max-width: 768px)').matches;
+      const navLinks = document.getElementById('navLinks');
+      if (navLinks && navLinks.classList.contains('active')) {
+        fixedBar.classList.remove('visible');
+      }
+    
       if (isMobile && fixedBar.classList.contains('visible')) {
         if (scrollY > lastScrollY + 5) {
           fixedBar.classList.add('hide-on-scroll');

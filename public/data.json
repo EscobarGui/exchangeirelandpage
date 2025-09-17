@@ -1,9 +1,9 @@
 {
   "base_currency": "BRL",
-  "eur_brl": 5.50,
+  "eur_brl": 6.28,
 
-  "pix_key": "guilherme.escobar@email.com",
-  "pix_qr_url": "assets/pix-qr.png",
+  "pix_key": "guilherm2010@hotmail.com",
+  "pix_qr_url": "assets/qrcode-pix.png",
 
   "spreadsheet_url": "#",
 
@@ -15,7 +15,7 @@
 
   "social": {
     "instagram": "#",
-    "linkedin": "#",
+    "linkedin": "https://www.linkedin.com/in/guilherme-escobar-",
     "whatsapp": "#"
   },
 
@@ -25,12 +25,12 @@
   },
 
   "costs": {
-    "flights": 6600,
-    "housing": 26400,
-    "food": 13200,
-    "transport": 3300,
-    "insurance": 1650,
-    "fees": 8250,
-    "contingency": 6600
+    "flights": 7446,
+    "housing": 11756.16,
+    "food": 7536,
+    "transport": 1884,
+    "insurance": 2250,
+    "fees": 9983.84,
+    "contingency": 7600
   }
 }
