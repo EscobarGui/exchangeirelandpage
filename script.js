@@ -205,7 +205,7 @@ function switchLanguage(lang){
   // toggle content blocks
   document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
 
-  document.querySelectorAll('.section, .hero, .story-stats, .progress-card, .pix-card, .platforms-card, .faq-item, .update-card, .fixed-bar, footer')
+  document.querySelectorAll('.section, .hero, .story-stats, .progress-card, .pix-card, .platforms-card, .faq-item, .update-card, .fixed-bar, footer, .nav-links')
     .forEach(section => {
       const kids = section.querySelectorAll('.lang-content');
       if (kids.length){
