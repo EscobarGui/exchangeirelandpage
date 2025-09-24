@@ -206,6 +206,8 @@ function setupPhotoGallery(gallery){
   let currentPage = 0;
   let isAnimating = false;
   let scrollTimeout;
+  let resizeTimeout;
+  let pageOffsets = [];
 
   function updateButtons(){
     if (prevBtn) prevBtn.disabled = currentPage === 0;
@@ -235,11 +237,29 @@ function setupPhotoGallery(gallery){
     }
   }
 
+  function computeOffsets(){
+    pageOffsets = [];
+    for (let page = 0; page < totalPages; page++){
+      if (page === totalPages - 1){
+        pageOffsets.push(Math.max(0, track.scrollWidth - viewport.clientWidth));
+        continue;
+      }
+      const targetIndex = page * itemsPerView;
+      const targetItem = items[targetIndex];
+      const offset = targetItem ? targetItem.offsetLeft : page * viewport.clientWidth;
+      pageOffsets.push(offset);
+    }
+    if (totalPages === 1 && pageOffsets.length === 0){
+      pageOffsets.push(0);
+    }
+  }
+
   function goToPage(page, animate){
     currentPage = Math.max(0, Math.min(page, totalPages - 1));
     const behavior = animate ? 'smooth' : 'auto';
     isAnimating = true;
-    viewport.scrollTo({ left: currentPage * viewport.clientWidth, behavior });
+    const targetOffset = pageOffsets[currentPage] ?? 0;
+    viewport.scrollTo({ left: targetOffset, behavior });
     updateDots();
     updateButtons();
     if (!animate){
@@ -253,6 +273,7 @@ function setupPhotoGallery(gallery){
     itemsPerView = mediaQuery.matches ? 1 : 3;
     totalPages = Math.max(1, Math.ceil(items.length / itemsPerView));
     currentPage = Math.min(currentPage, totalPages - 1);
+    computeOffsets();
     updateDots();
     goToPage(currentPage, false);
   }
@@ -269,13 +290,34 @@ function setupPhotoGallery(gallery){
     if (isAnimating) return;
     clearTimeout(scrollTimeout);
     scrollTimeout = setTimeout(() => {
-      const approxPage = Math.round(viewport.scrollLeft / viewport.clientWidth);
-      if (approxPage !== currentPage){
-        currentPage = Math.max(0, Math.min(approxPage, totalPages - 1));
+      let closestPage = currentPage;
+      let smallestDiff = Infinity;
+      pageOffsets.forEach((offset, idx) => {
+        const diff = Math.abs(viewport.scrollLeft - offset);
+        if (diff < smallestDiff){
+          smallestDiff = diff;
+          closestPage = idx;
+        }
+      });
+      if (closestPage !== currentPage){
+        currentPage = Math.max(0, Math.min(closestPage, totalPages - 1));
         updateDots();
         updateButtons();
       }
     }, 120);
+  });
+
+  if (window.ResizeObserver){
+    const observer = new ResizeObserver(() => {
+      computeOffsets();
+      goToPage(currentPage, false);
+    });
+    observer.observe(track);
+  }
+
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(recalcPages, 150);
   });
 
   if (mediaQuery.addEventListener){
