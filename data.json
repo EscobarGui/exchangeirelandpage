@@ -1,29 +1,23 @@
 {
   "base_currency": "BRL",
   "eur_brl": 6.28,
-
   "pix_key": "guilherm2010@hotmail.com",
   "pix_qr_url": "assets/qrcode-pix.png",
-
   "spreadsheet_url": "#",
-
   "platforms": {
     "vakinha": "#",
     "benfeitoria": "#",
     "picpay": "#"
   },
-
   "social": {
     "instagram": "#",
     "linkedin": "https://www.linkedin.com/in/guilherme-escobar-",
     "whatsapp": "#"
   },
-
   "progress": {
-    "goal": 66000,
+    "goal": 49356.0,
     "raised": 0
   },
-
   "costs": {
     "flights": 7446,
     "housing": 11756.16,
@@ -31,6 +25,7 @@
     "transport": 1884,
     "insurance": 2250,
     "fees": 9983.84,
-    "contingency": 7600
+    "contingency": 7600,
+    "mobile": 900
   }
 }
