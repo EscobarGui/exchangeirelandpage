@@ -7,25 +7,25 @@
   "platforms": {
     "vakinha": "#",
     "benfeitoria": "#",
-    "picpay": "#"
+    "picpay": "https://wise.com/pay/me/guilhermedafrancasilvae"
   },
   "social": {
-    "instagram": "#",
+    "instagram": "https://www.instagram.com/_guidaf",
     "linkedin": "https://www.linkedin.com/in/guilherme-escobar-",
-    "whatsapp": "#"
+    "whatsapp": "https://wa.me/5511994959995"
   },
   "progress": {
-    "goal": 49356.0,
+    "goal": 65356.0,
     "raised": 0
   },
   "costs": {
-    "flights": 7446,
-    "housing": 11756.16,
-    "food": 7536,
-    "transport": 1884,
-    "insurance": 2250,
+    "flights": 8946,
+    "housing": 17756.16,
+    "food": 15536,
+    "transport": 3884,
+    "insurance": 3750,
     "fees": 9983.84,
-    "contingency": 7600,
+    "contingency": 8600,
     "mobile": 900
   }
 }
