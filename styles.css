@@ -37,7 +37,7 @@ body{font-family:'Lato',sans-serif;line-height:1.7;color:var(--gray-800);backgro
 .section-subtitle{font-size:1.375rem;text-align:center;margin-bottom:3.5rem;color:var(--gray-600);max-width:800px;margin-left:auto;margin-right:auto;line-height:1.6}
 
 /* Hero */
-.hero{min-height:80vh;display:flex;align-items:center;padding:4.5rem 2.5rem;background:linear-gradient(135deg,var(--gray-50) 0%,var(--white) 30%,var(--gold-soft) 100%);background-position:center;position:relative}
+.hero{min-height:80vh;display:flex;align-items:center;padding:0rem 2.5rem;background:linear-gradient(135deg,var(--gray-50) 0%,var(--white) 30%,var(--gold-soft) 100%);background-position:center;position:relative}
 .hero::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="shamrock" patternUnits="userSpaceOnUse" width="100" height="100"><circle cx="50" cy="50" r="1" fill="%23059669" opacity="0.05"/></pattern></defs><rect width="100" height="100" fill="url(%23shamrock)"/></svg>');pointer-events:none}
 .hero-container{max-width:1700px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;position:relative;z-index:1;}
 .hero-content h1{font-family:'Montserrat',sans-serif;font-weight:800;font-size:3.25rem;line-height:1.15;margin-bottom:2rem;color:var(--gray-900);letter-spacing:-.025em}
