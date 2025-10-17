@@ -185,6 +185,16 @@ function hydrateFromData(){
   const pct = goalBase > 0 ? Math.min(100, Math.round((raisedBase/goalBase)*100)) : 0;
   const bar = document.querySelector('.js-progress-fill');
   if (bar) bar.style.width = pct + '%';
+
+  setAll('.js-progress-percent', pct);
+  const marker = document.querySelector('.js-progress-marker');
+  if (marker){
+    const markerPct = Math.max(0, Math.min(100, pct));
+    marker.style.left = markerPct + '%';
+    marker.classList.remove('is-start','is-end');
+    if (markerPct < 8) marker.classList.add('is-start');
+    if (markerPct > 92) marker.classList.add('is-end');
+  }
 }
 
 function initPhotoGalleries(){

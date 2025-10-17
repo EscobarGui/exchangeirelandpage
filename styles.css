@@ -105,9 +105,18 @@ body{font-family:'Lato',sans-serif;line-height:1.7;color:var(--gray-800);backgro
 .opacity-80{opacity:.8}
 .fw-600{font-weight:600}
 .progress-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem}
-.progress-bar{background:rgba(255,255,255,.2);height:24px;border-radius:12px;margin:2rem 0;overflow:hidden;position:relative;z-index:1}
+.progress-bar-wrapper{position:relative;margin:2rem 0 2.5rem}
+.progress-bar{background:rgba(255,255,255,.2);height:24px;border-radius:12px;overflow:hidden;position:relative;z-index:1}
 .progress-fill{background:linear-gradient(90deg,var(--gold) 0%,var(--gold-light) 100%);height:100%;width:0;border-radius:12px;transition:width .8s ease;position:relative}
 .progress-fill::after{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:linear-gradient(90deg,transparent 0%,rgba(255,255,255,.3) 50%,transparent 100%);animation:shimmer 2s infinite}
+.progress-marker{position:absolute;left:0;top:100%;transform:translate(-50%,12px);pointer-events:none;transition:left .8s ease;z-index:2}
+.progress-marker-bubble{background:var(--white);color:var(--emerald-dark);padding:.45rem .95rem;border-radius:999px;font-weight:700;font-size:.875rem;box-shadow:0 10px 24px rgba(0,0,0,.18);position:relative;white-space:nowrap}
+.progress-marker-bubble::after{content:'';position:absolute;top:-6px;left:50%;transform:translateX(-50%);border-width:0 6px 6px 6px;border-style:solid;border-color:transparent transparent var(--white) transparent}
+.progress-marker.is-start{transform:translate(-5%,12px)}
+.progress-marker.is-end{transform:translate(-95%,12px)}
+@media (max-width:600px){
+  .progress-marker-bubble{font-size:.8rem;padding:.35rem .7rem}
+}
 @keyframes shimmer{0%{transform:translateX(-100%)}100%{transform:translateX(100%)}}
 .transparency-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(255,255,255,.2);padding:.75rem 1.25rem;border-radius:50px;font-size:.9rem;font-weight:600;margin-top:1rem}
 .costs-table{background:var(--white);border-radius:20px;overflow:hidden;box-shadow:0 8px 40px rgba(0,0,0,.08);margin-bottom:3rem;border:1px solid var(--gray-200)}
